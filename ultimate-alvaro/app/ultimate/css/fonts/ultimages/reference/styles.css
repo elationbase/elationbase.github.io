@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "ultimages";
+  src:url("../ultimages.eot");
+  src:url("../ultimages.eot?#iefix") format("embedded-opentype"),
+    url("../ultimages.woff") format("woff"),
+    url("../ultimages.ttf") format("truetype"),
+    url("../ultimages.svg#ultimages") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "ultimages" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "ultimages" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\62";
+}
+.icon-checkmark:before {
+  content: "\63";
+}
+.icon-heart:before {
+  content: "\65";
+}
+.icon-more:before {
+  content: "\67";
+}
+.icon-keypad:before {
+  content: "\68";
+}
+.icon-loader:before {
+  content: "\6c";
+}
+.icon-ultimate:before {
+  content: "\6e";
+}
+.icon-cloudy:before {
+  content: "\6f";
+}
+.icon-love:before {
+  content: "\7a";
+}
+.icon-delete:before {
+  content: "\41";
+}
+.icon-edit:before {
+  content: "\42";
+}
+.icon-lock:before {
+  content: "\43";
+}
+.icon-unlock:before {
+  content: "\44";
+}
+.icon-sync:before {
+  content: "\45";
+}
+.icon-photo:before {
+  content: "\46";
+}
+.icon-cloud:before {
+  content: "\70";
+}
+.icon-map:before {
+  content: "\71";
+}
+.icon-plus:before {
+  content: "\61";
+}
+.icon-arrow-down:before {
+  content: "\64";
+}

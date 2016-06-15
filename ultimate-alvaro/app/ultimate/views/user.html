@@ -1,0 +1,77 @@
+<article ng-model="users" class="users">
+  <header class="hero {{users[whichItem].shortname}}">
+    <img class="face" ng-src="img/{{users[whichItem].shortname}}.jpg">
+    <div class="info">
+      <h2>{{users[whichItem].name}}</h2>
+      <h3>member sice {{users[whichItem].member}}</h3>
+      <div class="bio">{{users[whichItem].bio}}</div>
+    </div>
+  </header>
+  <section class="recap wrapper">
+    <div class="recap-l">
+      <p>
+        24 <span>FILES</span>
+        <span class="icon icon-photo"></span>
+      </p>
+    </div>
+    <div class="recap-r">
+      <p>
+        150 <span>FOLLOWERS</span>
+        <span class="icon icon-cloud"></span>
+      </p>
+    </div>
+  </section>
+  <section class="list-section">
+    <header class="wrapper js-stick-ele" data-offset="0">
+      <div class="stick">
+        <div class="list-l">
+          <a data-modal-target="modal-add" class="add-new"><span class="icon-plus"></span>add new file</a>
+        </div>
+        <nav class="list-r">
+          <li><a data-modal-target="modal-delete" class="icon icon-delete"></a></li>
+          <li><a data-modal-target="modal-delete" class="icon icon-edit"></a></li>
+          <li><a data-modal-target="modal-delete" class="icon icon-lock"></a></li>
+          <li><a data-modal-target="modal-delete" class="icon icon-love"></a></li>
+          <li><a data-modal-target="modal-delete" class="icon icon-more"></a></li>
+        </div>
+      </div>
+    </header>
+    <ul class="list-files">
+      <li class="legend wrapper js-stick-ele" data-offset="51">
+        <div class="stick">
+          <div class="list-l">
+            Name
+          </div>
+          <div class="list-r">
+            <span>Owner</span>
+            <span>created</span>
+            <span>Modify</span>
+            <span>size</span>
+          </div>
+        </div>
+      </li>
+      <li ng-repeat="file in users[whichItem].files" class="file wrapper">
+        <a href="#" data-modal-target="modal-image">
+          <div class="list-l">
+            <span class="file-type">
+              {{file.type}}
+            </span>
+            <p class="file-name">
+              {{file.name}}
+            </p>
+          </div>
+          <div class="list-r">
+            <span>{{users[whichItem].name}}</span>
+            <span>{{file.datecreated}}</span>
+            <span>{{file.datemodify}}</span>
+            <span>{{file.size}}</span>
+          </div>
+        </a>
+      </li>
+    <ul>
+  </section>
+  <a data-modal-target="modal-add" class="add-new add-new-bottom button "><span class="icon-plus"></span>add new file</a>
+  <div modal-delete></div>
+  <div modal-add></div>
+  <div modal-image></div>
+</article>
